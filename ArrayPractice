@@ -1,0 +1,43 @@
+package arraypractice;
+/**
+ *
+ * @author patrickbenitez
+ */
+public class ArrayPractice {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        int arraySize = 6;
+        int[] integerArray = new int[arraySize];
+        float[] floatArray = new float[arraySize];
+        double[] doubleArray = new double[arraySize];
+        
+        
+        for (int i =0; i<arraySize; i++){
+            integerArray[i] = i;
+            floatArray[i] = i;
+            doubleArray[i] = i;
+        }
+        
+        System.out.println("All three arrays are filled.");
+        System.out.println("We will now print all the values" +"\n");
+        
+        System.out.println("Values located in the integer array is as follows:");
+        for (int i=0; i<arraySize; i++){
+            System.out.println("Location of integerArray[" + i + "] = " + integerArray[i]);
+        }
+        
+        System.out.println("\n" + "Values located in the float array is as follows:");
+        for (int i=0; i<arraySize; i++){
+            System.out.println("Location of floatArray[" + i + "] = " + floatArray[i]);
+        }
+        
+        System.out.println("\n" + "Values located in the double array is as follows:");
+        for (int i=0; i<arraySize; i++){
+            System.out.println("Location of doubleArray[" + i + "] = " + doubleArray[i]);
+        }       
+    }
+}
